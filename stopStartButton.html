@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start/Stop Button</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    Homework Lesson 6
+    <br>
+    <a href="index.html" style="font-size: 3px; color: darksalmon;">homepage</a>
+    <br>
+    <a href="3buttonsColors.html" style="font-size: 3px; color: darksalmon;">buttons change color</a>
+    <a href="buttonRandomPosition.html" style="font-size: 3px; color: darksalmon;">button random position</a>
+    <a href="stopStartButton.html" style="font-size: 3px; color: darksalmon;">button color timer</a>
+    <a href="usernamePassword.html" style="font-size: 3px; color: darksalmon;">username & password</a>
+    <a href="userInputNumber.html" style="font-size: 3px; color: darksalmon;">input number</a>
+    <a href="if100.html" style="font-size: 3px; color: darksalmon;">if 100 (3 ifs)</a>
+    <a href="ticTacToe_shortIf.html" style="font-size: 3px; color: darksalmon;">tictactoe short if</a>
+    <a href="fizzBizz_shortIf.html" style="font-size: 3px; color: darksalmon;">fizzbizz short if</a>
+    <a href="array_5numbers.html" style="font-size: 3px; color: darksalmon;">array 5 numbers</a>
+    <br>
+
+
+    <div id="d1">
+        <button id="b1" onclick="stopStart()">stop/start</button>
+    </div>
+    <script>
+        let counter = 0
+        let colorRgb = 1
+        let colorRgb2 = 90
+        let colorRgb3 = 200
+
+        let working = true
+        let worker = setInterval(timerCount, 100)
+
+        function timerCount() {
+            counter++
+            console.log(counter);
+            b1.style.backgroundColor = `rgba(${colorRgb2}, ${colorRgb}, ${colorRgb3})`
+            colorRgb += 10
+            if (colorRgb >= 255) colorRgb = !colorRgb
+            if (colorRgb >= 255) colorRgb2 = !colorRgb2
+            if (colorRgb >= 255) colorRgb3 = !colorRgb3
+
+        }
+        function stopStart() {
+            if (working) {
+                clearInterval(worker)
+                console.log("timer stopped!");
+            } else {
+                worker = setInterval(timerCount, 100)
+                console.log("timer started!");
+            } working = !working
+        }
+    </script>
+</body>
+
+</html>

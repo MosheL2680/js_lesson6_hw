@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    Homework Lesson 6
+    <br>
+    <a href="index.html" style="font-size: 3px; color: darksalmon;">homepage</a>
+    <br>
+    <a href="3buttonsColors.html" style="font-size: 3px; color: darksalmon;">buttons change color</a>
+    <a href="buttonRandomPosition.html" style="font-size: 3px; color: darksalmon;">button random position</a>
+    <a href="stopStartButton.html" style="font-size: 3px; color: darksalmon;">button color timer</a>
+    <a href="usernamePassword.html" style="font-size: 3px; color: darksalmon;">username & password</a>
+    <a href="userInputNumber.html" style="font-size: 3px; color: darksalmon;">input number</a>
+    <a href="if100.html" style="font-size: 3px; color: darksalmon;">if 100 (3 ifs)</a>
+    <a href="ticTacToe_shortIf.html" style="font-size: 3px; color: darksalmon;">tictactoe short if</a>
+    <a href="fizzBizz_shortIf.html" style="font-size: 3px; color: darksalmon;">fizzbizz short if</a>
+    <a href="array_5numbers.html" style="font-size: 3px; color: darksalmon;">array 5 numbers</a>
+    <br>
+    Go to console log. . .
+    <br>
+    <img src="test.webp" alt="dancing pepe" width="80px">
+    <br>
+    <script>
+        let numberList = [31, 27, 47, 19, 35]
+        let max = Math.max(...numberList);
+        let min = Math.min(...numberList);
+        let numbersAdded = numberList.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+        console.log("new array", numberList);
+        console.log("array reversed", numberList.reverse());
+        console.log("array length is", numberList.length);
+        console.log("numbers added", numbersAdded);
+        console.log("highest number is", max);
+        console.log("lowest number is", min);
+
+    </script>
+</body>
+
+</html>
