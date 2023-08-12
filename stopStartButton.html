@@ -14,16 +14,16 @@
     <a href="index.html" style="font-size: 13px; color: darksalmon;">homepage</a>
     <br>
     <a href="3buttonsColors.html" style="font-size: 11px; color: darksalmon;"> buttons change color &nbsp </a>
-    <a href="buttonRandomPosition.html" style="font-size: 11px; color: burlywood;"> button random position  &nbsp</a>
+    <a href="buttonRandomPosition.html" style="font-size: 11px; color: burlywood;"> button random position &nbsp</a>
     <a href="stopStartButton.html" style="font-size: 11px; color: darksalmon;"> button color timer &nbsp </a>
-    <a href="usernamePassword.html" style="font-size: 11px; color: burlywood;"> username & password  &nbsp </a>
-    <a href="userInputNumber.html" style="font-size: 11px; color: darksalmon;"> input number  &nbsp </a>
+    <a href="usernamePassword.html" style="font-size: 11px; color: burlywood;"> username & password &nbsp </a>
+    <a href="userInputNumber.html" style="font-size: 11px; color: darksalmon;"> input number &nbsp </a>
     <a href="if100.html" style="font-size: 11px; color: burlywood;">if 100 (3 ifs)</a>
     <a href="ticTacToe_shortIf.html" style="font-size: 11px; color: darksalmon;">tictactoe short if &nbsp</a>
     <a href="fizzBizz_shortIf.html" style="font-size: 11px; color: burlywood;">fizzbizz short if &nbsp</a>
     <a href="array_5numbers.html" style="font-size: 11px; color: darksalmon;">array 5 numbers &nbsp</a>
     <br>
-<h2>timer button changing colors</h2>
+    <h2>Timer button changing colors</h2>
     <div id="d1">
         <button id="b1" onclick="stopStart()">stop/start</button>
     </div>
@@ -32,7 +32,6 @@
         let colorRgb = 1
         let colorRgb2 = 90
         let colorRgb3 = 200
-
         let working = true
         let worker = setInterval(timerCount, 100)
 
@@ -44,7 +43,6 @@
             if (colorRgb >= 255) colorRgb = !colorRgb
             if (colorRgb >= 255) colorRgb2 = !colorRgb2
             if (colorRgb >= 255) colorRgb3 = !colorRgb3
-
         }
         function stopStart() {
             if (working) {
